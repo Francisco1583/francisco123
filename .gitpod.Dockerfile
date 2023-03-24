@@ -1,6 +1,5 @@
 FROM gitpod/workspace-base
-RUN sudo apt update
-RUN sudo apt install -y python3-pip
-RUN sudo pip install seaborn
-RUN pip install pandas
+RUN sudo apt-get update
+RUN sudo apt-get install -y python3-venv python3-pip
+RUN pip install pandas seaborn scikit-learn kneed
 USER gitpod
